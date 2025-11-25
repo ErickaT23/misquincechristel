@@ -1,5 +1,5 @@
 :root {
-    --color-1: #d77488;
+    --color-1: #c2b6dc;
     --font-1: "cormorant garamond", serif;
     --scroll-animation-duration: 0.5s;
 }
@@ -33,13 +33,13 @@ body {
 #envelope-top {
     top: 0;
     border-bottom: none;
-    background-image: url(/Imagenes/enve.svg);
+    background-image: url(/Imagenes/envelope.svg);
 }
 /* Parte inferior del sobre (cuerpo) */
 #envelope-bottom {
     bottom: 0;
     border-top: none;
-    background-image: url(/Imagenes/enve.svg);
+    background-image: url(/Imagenes/envelope.svg);
 }
 #envelope-top, #envelope-bottom {
     position: absolute;
@@ -72,7 +72,7 @@ body {
 }
 #seal h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
@@ -105,9 +105,9 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 45px;
+    font-size: 30px;
     white-space: nowrap;
-    margin-top: 70px;
+    margin-top: 40px;
     background: linear-gradient(  135deg,
     #fdf8f2,  /* perla muy clara */
     #f2e6d8,  /* champagne suave */
@@ -140,9 +140,9 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 35px;
+    font-size: 40px;
     white-space: nowrap;
-    margin-top: 15px;
+    margin-top: 75px;
     background: linear-gradient(  135deg,
     #fdf8f2,  /* perla muy clara */
     #f2e6d8,  /* champagne suave */
@@ -170,7 +170,6 @@ body {
     font-size: 35px;
     margin-top: -10px;
     margin-bottom: -10px;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -178,6 +177,13 @@ body {
     animation: brillar 5s ease-in-out infinite;
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
 }
 .section-main {
     position: relative;
@@ -194,10 +200,9 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     padding: 15px;
     margin: 0;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -205,10 +210,13 @@ body {
     animation: brillar 5s ease-in-out infinite;
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
-}
-.section-main h2 {
-    top: 18%;
-    font-size: 45px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
 }
 .section-music{
     position: relative;
@@ -223,7 +231,6 @@ body {
     margin-bottom: 10px;
 }
 .section-music h2{
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -235,6 +242,13 @@ body {
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
 }
 .section-countdown {
     margin: 0;
@@ -249,24 +263,22 @@ body {
     align-items: center;
 }
 .section-countdown h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-family: var(--font-1);
     font-size: 42px;
     font-weight: 400;
     font-style: italic;
-    padding: 10px;
     margin: 0;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
+    padding: 10px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
     animation: brillar 5s ease-in-out infinite;
-    padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
-}
+  }
+  
 .section-countdown p {
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -280,6 +292,13 @@ body {
     font-style: italic;
     font-size: 22px;
     padding: 7px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
 }
 .section-countdown h2 {
     font-family: var(--font-1);
@@ -288,7 +307,6 @@ body {
     font-style: italic;
     padding: 5px;
     margin: 0;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -296,6 +314,13 @@ body {
     animation: brillar 5s ease-in-out infinite;
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
 }
 #contador{
     display: flex;
@@ -307,7 +332,7 @@ body {
 .countdown-circle {
     width: 75px;
     height: 75px;
-    background:#a2b5a3;
+    background:#c2b6dc;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -337,19 +362,14 @@ body {
 .section-calendar a {
     text-decoration: none;
     font-family: var(--font-1);
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-1);
     animation: brillar 5s ease-in-out infinite;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
     font-style: italic;
     font-size: 1.2em;
 }
-.section-calendar:hover {
-    background-color: var(--color-1);
-}
+
 .section-calendar a:hover {
     background: linear-gradient(  135deg,
     #fdf8f2,  /* perla muy clara */
@@ -373,30 +393,6 @@ body {
     align-items: center;
     overflow: hidden;
 }
-.section-cerezo0{
-    position: relative;
-    width: 100%;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.section-cerezo0::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/Imagenes/iz.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-    opacity: 0.8;
-}
 .section-cerezo{
     position: relative;
     width: 100%;
@@ -414,7 +410,55 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/Imagenes/de.svg');
+    background-image: url('/Imagenes/D1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+.section-cerezo1{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section-cerezo1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Imagenes/D4.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+.section-cerezo2{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section-cerezo2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Imagenes/D2.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -426,7 +470,6 @@ body {
     font-style: italic;
     font-weight: 400;
     font-size: 26px;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -435,6 +478,14 @@ body {
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
     margin-bottom: 20px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite;
+    
 }
 .section-playlist p {
     font-family: var(--font-1);
@@ -442,23 +493,6 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: var(--color-1);
-}
-.verisculo h1{
-    font-family: var(--font-1);
-    padding: 15px;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: linear-gradient(135deg, #c4d9c7,#a2b5a3,#6f7e6d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: brillar 5s ease-in-out infinite;
-    padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
 }
 .section-b h1, .section-b h2, .section-b h3{
     font-family: var(--font-1);
@@ -468,28 +502,39 @@ body {
     font-size: 35px;
     margin-top: -10px;
     margin-bottom: -10px;
-    background: linear-gradient(135deg, #c4d9c7,#a2b5a3,#6f7e6d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: brillar 5s ease-in-out infinite;
     padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    background: linear-gradient(135deg, 
+    #f3e5f5,  /* lila claro pastel */
+    #e1bee7,  /* lavanda */
+    #ce93d8,  /* lila medio */
+    #ba68c8,  /* púrpura suave */
+    #ab47bc,  /* lila intenso */
+    #f3e5f5   /* retorno al claro */
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  animation: brillar 5s ease-in-out infinite;
+    
 }
 .section-invitados h3{
-    background: linear-gradient(135deg, #c4d9c7,#a2b5a3,#6f7e6d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: brillar 5s ease-in-out infinite;
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
     font-size: 30px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite; 
 }
 .section-invitados h1{
     font-family: var(--font-1);
@@ -499,7 +544,6 @@ body {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -507,6 +551,22 @@ body {
     animation: brillar 5s ease-in-out infinite;
     padding: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    background: linear-gradient(135deg, 
+    #f3e5f5,  /* lila claro pastel */
+    #e1bee7,  /* lavanda */
+    #ce93d8,  /* lila medio */
+    #ba68c8,  /* púrpura suave */
+    #ab47bc,  /* lila intenso */
+    #f3e5f5   /* retorno al claro */
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  animation: brillar 5s ease-in-out infinite;
 }
 .section h2, .section-playlist h2, .section-gifts h2, .section h3, .section-filter h2{
     font-family: var(--font-1);
@@ -516,14 +576,24 @@ body {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
     animation: brillar 5s ease-in-out infinite;
     padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    background: linear-gradient(135deg, 
+    #f3e5f5,  /* lila claro pastel */
+    #e1bee7,  /* lavanda */
+    #ce93d8,  /* lila medio */
+    #ba68c8,  /* púrpura suave */
+    #ab47bc,  /* lila intenso */
+    #f3e5f5   /* retorno al claro */
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  animation: brillar 5s ease-in-out infinite;
 }
 .section p, .section-gifts p, .section-filter p{
     font-family: var(--font-1);
@@ -532,14 +602,14 @@ body {
     font-size: 22px;
     padding: 5px;
     margin: 0;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
+    background: linear-gradient(135deg, #f3e5f5, /* lila claro pastel */ #e1bee7, /* lavanda */ #ce93d8, /* lila medio */ #ba68c8, /* púrpura suave */ #ab47bc, /* lila intenso */ #f3e5f5 /* retorno al claro */);
+    background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     animation: brillar 5s ease-in-out infinite;
-    padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
 }
 .section span{
     font-family: var(--font-1);
@@ -548,14 +618,14 @@ body {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
+    padding: 10px;
+    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: brillar 5s ease-in-out infinite;
-    padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
+    animation: brillar 5s ease-in-out infinite; 
 }
 .icon {
     padding: 0;
@@ -619,7 +689,7 @@ body {
     cursor: pointer;
 }
 button, .upload-btn {
-    background-color: #a2b5a3;
+    background-color: #b49b59;
     color: #fff;
     border-radius: 5px;
     font-family: var(--font-1);
@@ -633,12 +703,12 @@ button, .upload-btn {
     text-decoration: none;
 }
 button:hover {
-    background-color:#6f7e6d;
+    background-color:#6;
     
 }
 footer {
     padding: 20px;
-    background: #6f7e6d;
+    background: #c2b6dc;
     color: white;
     font-size: var(--footer-font-size);
     width: 100%;
@@ -778,7 +848,6 @@ footer {
     font-family: var(--font-1);
     font-style: italic;
     margin-top: -10px;
-    background: linear-gradient(135deg, #f4c6ce,  #e89aaa, #d77488, #f7dce2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

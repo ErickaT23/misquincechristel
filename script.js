@@ -79,7 +79,7 @@ async function cargarDatosInvitado() {
 
 // Función para iniciar el contador de la fecha del evento
 function iniciarContador() {
-    const eventoFecha = new Date("December 12, 2025 19:00:00").getTime();
+    const eventoFecha = new Date("December 20, 2025 15:30:00").getTime();
 
     setInterval(() => {
         const ahora = new Date().getTime();
@@ -158,20 +158,19 @@ function confirmarAsistencia() {
   
     // Construcción del mensaje según la cantidad de pases
     const mensaje = (pases === 1)
-      ? `Hola, soy ${nombre} y confirmo mi asistencia a los quince de nuestra querida Andrea Mishelle con 1 pase asignado.`
-      : `Hola, somos ${nombre} y confirmamos nuestra asistencia a los quince de nuestra querida Andrea Mishelle con ${pases} pases asignados.`;
+      ? `Hola, soy ${nombre} y confirmo mi asistencia a los quince de nuestra querida Cristhel Yamilí con 1 pase asignado.`
+      : `Hola, somos ${nombre} y confirmamos nuestra asistencia a los quince de nuestra querida Cristhel Yamilí con ${pases} pases asignados.`;
   
-    const numeroTelefono = '50242169141';
+    const numeroTelefono = '50246527370';
     const enlaceWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
     window.open(enlaceWhatsapp, '_blank');
   }
-  
-      
+   
 //Funcion para abrir waze o maps
 //iglesia
 function elegirAplicacion() {
-    const enlaceGoogleMaps = 'https://maps.app.goo.gl/7h25wkMjiY3V37MSA';
-    const enlaceWaze = 'htthttps://www.waze.com/en/live-map/directions/colina-country-club-cito-180-quezaltenango?place=w.175964308.1759774157.9410872';
+    const enlaceGoogleMaps = '';
+    const enlaceWaze = '';
 
     // Intentar abrir Google Maps primero
     window.open(enlaceGoogleMaps, '_blank');
@@ -183,8 +182,8 @@ function elegirAplicacion() {
 }
 //fiesta
 function elegirAplicacionOtraDireccion() {
-    const enlaceGoogleMaps = 'https://maps.app.goo.gl/2EiuQ27B5VnPJwgh8';
-    const enlaceWaze = 'https://waze.com/ul/h9fxeh1xcm';
+    const enlaceGoogleMaps = '';
+    const enlaceWaze = '';
 
     // Intentar abrir Google Maps primero
     window.open(enlaceGoogleMaps, '_blank');
@@ -194,48 +193,4 @@ function elegirAplicacionOtraDireccion() {
         window.open(enlaceWaze, '_blank');
     }, 1000); // Retraso para permitir que el primer enlace se abra si está disponible
 }
-function mostrarCuenta() {
-    const info = document.getElementById("info-cuenta");
-    if (info.style.display === "none") {
-        info.style.display = "block";
-    } else {
-        info.style.display = "none";
-    }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    // Mostrar/Ocultar buenos deseos
-    document.getElementById('show-wishes').addEventListener('click', function () {
-      window.toggleWishes();
-    });
-  
-    // Mostrar formulario de envío
-    document.getElementById('send-wish').addEventListener('click', function () {
-      const form = document.getElementById('wish-form');
-      form.classList.toggle('hidden');
-    });
-  
-    // Enviar mensaje
-    document.getElementById('submit-wish').addEventListener('click', function () {
-      const nombre = document.getElementById('wish-name').value.trim();
-      const mensaje = document.getElementById('wish-message').value.trim();
-  
-      if (!nombre || !mensaje) {
-        alert('Por favor, completa ambos campos.');
-        return;
-      }
-  
-      window.guardarDeseo(nombre, mensaje)
-        .then(() => {
-          alert('¡Gracias por tus buenos deseos!');
-          document.getElementById('wish-name').value = '';
-          document.getElementById('wish-message').value = '';
-          document.getElementById('wish-form').classList.add('hidden');
-          document.getElementById('wishes-container').dataset.loaded = 'false';
-        })
-        .catch((error) => {
-          console.error('Error al guardar el deseo:', error);
-          alert('Hubo un problema al enviar tu mensaje.');
-        });
-    });
-  });
-  
+
