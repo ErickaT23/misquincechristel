@@ -200,23 +200,18 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 25px;
-    padding: 15px;
+    font-size: 23px;
+    padding: 20px;
     margin: 0;
+    background: linear-gradient(135deg, #f3e5f5, /* lila claro pastel */ #e1bee7, /* lavanda */ #ce93d8, /* lila medio */ #ba68c8, /* púrpura suave */ #ab47bc, /* lila intenso */ #f3e5f5 /* retorno al claro */);
+    background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: brillar 5s ease-in-out infinite;
-    padding: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* ayuda visual sin ensuciar */
-    background: linear-gradient(135deg, #fcd27f,#f5b942, #e8a628,#fceabb);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ayuda visual suave */
-    animation: brillar 5s ease-in-out infinite;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    animation: brillar 5s 
+ease-in-out infinite;
 }
 .section-music{
     position: relative;
@@ -713,6 +708,7 @@ footer {
     font-size: var(--footer-font-size);
     width: 100%;
     box-sizing: border-box;
+    margin-top: -5px;
 }
 .section-social-icons {
     padding: 20px;
