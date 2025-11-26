@@ -161,7 +161,7 @@ function confirmarAsistencia() {
       ? `Hola, soy ${nombre} y confirmo mi asistencia a los quince de nuestra querida Cristhel Yamilí con 1 pase asignado.`
       : `Hola, somos ${nombre} y confirmamos nuestra asistencia a los quince de nuestra querida Cristhel Yamilí con ${pases} pases asignados.`;
   
-    const numeroTelefono = '50246527370';
+    const numeroTelefono = '50230536382';
     const enlaceWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
     window.open(enlaceWhatsapp, '_blank');
   }
