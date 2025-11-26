@@ -169,28 +169,19 @@ function confirmarAsistencia() {
 //Funcion para abrir waze o maps
 //iglesia
 function elegirAplicacion() {
-    const enlaceGoogleMaps = '';
-    const enlaceWaze = '';
-
-    // Intentar abrir Google Maps primero
+    const enlaceGoogleMaps = 'https://maps.app.goo.gl/mYe4BFTgfQans55R9';
+  
+    // Abre Google Maps en una nueva pestaña
     window.open(enlaceGoogleMaps, '_blank');
-    
-    // Intentar abrir Waze (en caso de que Google Maps no esté disponible)
-    setTimeout(() => {
-        window.open(enlaceWaze, '_blank');
-    }, 1000); // Retraso para permitir que el primer enlace se abra si está disponible
-}
+  }
+  
 //fiesta
+// Fiesta
 function elegirAplicacionOtraDireccion() {
-    const enlaceGoogleMaps = '';
-    const enlaceWaze = '';
-
-    // Intentar abrir Google Maps primero
+    const enlaceGoogleMaps = 'https://maps.app.goo.gl/ZMr3cY9wBXkJ3zaC9';
+  
+    // Abrir el enlace en una nueva pestaña
     window.open(enlaceGoogleMaps, '_blank');
-
-    // Intentar abrir Waze (en caso de que Google Maps no esté disponible)
-    setTimeout(() => {
-        window.open(enlaceWaze, '_blank');
-    }, 1000); // Retraso para permitir que el primer enlace se abra si está disponible
-}
+  }
+  
 
